@@ -12,6 +12,6 @@ def check_min_one_wicket_keeper(json_data):
 def check_max_four_foreign_player(json_data):
     fp_count = 0
     for item in json_data['player']:
-        if item['county'] != 'India':
+        if item['country'] != 'India':
             fp_count = fp_count + 1
     return fp_count
